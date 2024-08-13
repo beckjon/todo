@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: .875rem 1rem;
+  border-top: #eee solid 1px;
+  border-bottom: #eee solid 1px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #76c0b0;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  left: 2%;
+  bottom: -6px;
+  height: 5px;
+  width: 96%;
+  background-color: #f3f3f3;
+  box-shadow: 0px 1px 2px 2px rgb(137 137 137 / 20%);
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  left: 4%;
+  bottom: -11px;
+  height: 5px;
+  width: 92%;
+  background-color: #f3f3f3;
+  box-shadow: 0px 1px 2px 2px rgb(137 137 137 / 20%);
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (width <= 768px) {
+  .container {
+    flex-direction: column;
+    gap: .875rem;
+  }
+
+  .count {
+    align-self: flex-start;
+  }
+}

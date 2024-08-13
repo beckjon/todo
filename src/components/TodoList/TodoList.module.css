@@ -1,0 +1,23 @@
+.wrapper {
+  max-height: 18.75rem;
+  overflow-y: auto;
+  box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.16);
+
+  @supports (scrollbar-gutter: stable) {
+    scrollbar-gutter: stable;  
+  }
+}
+
+.wrapper::-webkit-scrollbar {
+  width: .875rem;
+}
+
+.wrapper::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 6.25rem;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 6.25rem;
+}
